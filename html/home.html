@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MebToon</title>
+  <link rel="stylesheet" href="../css/universal-style.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="../assets/MebToon-Logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+
+    <div class="left-nav">
+      <img src="../assets/MebToon-Logo.png" id="logo" alt="">
+
+    </div>
+
+    <div class="mid-nav">
+
+      <a href="../html/home.html" id="active">Home</a>
+
+      <div class="dropdown">
+        <div class="dropbtn">
+          Top
+          <i class="fa fa-caret-down"></i>
+        </div>
+
+        <div class="dropdown-content">
+          <a href="../html/top-author.html">Top Author</a>
+          <a href="../html/top-comic.html">Top MebToon</a>
+        </div>
+
+      </div>
+
+      <a href="../html/subscribe.html">Subscribe</a>
+      <a href="../html/categories.html">Categories</a>
+      <a href=" javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+    </div>
+
+
+  </div>
+
+
+  <div class="content">
+
+    <div class="homepage-container">
+
+      <div class="description">
+
+        <div class="desc-container">
+          <h1>Welcome To <span>MebToon </span></h1>
+          <br>
+          <p>MebToon is a famous comic reading app that established in December 2001. We have a large fanbase all
+            over the world and we provides translations of over 3 types of comics, such as manhua, manhwa and mangas
+          </p>
+          <br>
+          <button> Read Now</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="release">
+      <div class="header-container">
+        <h2>Recent Release Comics</h2>
+        <div class="center-hr">
+          <hr>
+
+        </div>
+      </div>
+
+      <div class="comic-container">
+
+        <div class="slider-container">
+          <div class="slider-left">
+            <button id="prev"> <i class="fa-solid fa-chevron-left fa-2x"></i> </button>
+          </div>
+
+          <div class="slider">
+
+            <div class="slider_item">
+              <img src="../assets/slider asset/slider-1.jpg" alt="" srcset="">
+            </div>
+            <div class="slider_item">
+              <img src="../assets/slider asset/slider-2.png" alt="" srcset="">
+            </div>
+            <div class="slider_item">
+              <img src="../assets/slider asset/slider-3.jpg" alt="" srcset="">
+            </div>
+
+            <div class="slider_item">
+              <img src="../assets/slider asset/slider-4.jpeg" alt="" srcset="">
+            </div>
+
+            <div class="slider_item">
+              <img src="../assets/slider asset/slider-5.jpg" alt="" srcset="">
+            </div>
+
+          </div>
+          <div class="slider-right">
+            <button id="next"> <i class="fa-solid fa-chevron-right fa-2x"></i></button>
+
+          </div>
+
+        </div>
+
+
+        <!--     
+          <div class="cards">
+  
+              <div class="card">
+                <img class="card__image" src="../assets/card asset/card-pic1.jpg" alt="">
+                <div class="card__content">
+                  <h3>Blood Reverie</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus
+                    reiciendis fugit autem qui at.
+                  </p>
+                </div>
+                <div class="card__info">
+  
+                  <div>
+                    <a href="./" class="card__link">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card__image" src="../assets/card asset/card-pic2.jpg" alt="">
+                <div class="card__content">
+                  <h3>Sakamoto Days</h3>
+  
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus
+                    reiciendis fugit autem qui at.
+                  </p>
+  
+                </div>
+                <div class="card__info">
+  
+                  <div>
+                    <a href="./" class="card__link">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card__image" src="../assets/card asset/card-pic3.jpg" alt="">
+                <div class="card__content">
+                  <h3>Jujutsu Kaisen</h3>
+  
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus
+                    reiciendis fugit autem qui at.
+                  </p>
+                  <p>
+  
+                  </p>
+                </div>
+                <div class="card__info">
+  
+                  <div>
+                    <a href="./" class="card__link">Read More</a>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="card">
+                <img class="card__image" src="../assets/card asset/card-pic4.jpg" alt="">
+                <div class="card__content">
+                  <h3>Mercenary Enrollment </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos ducimus id ab tenetur delectus
+                    reiciendis fugit autem qui at.
+                  </p>
+                </div>
+                <div class="card__info">
+                  <div>
+                    <a href="./" class="card__link">Read More</a>
+                  </div>
+                </div>
+              </div>
+  
+              
+            </div>
+   -->
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+  </div>
+
+  </div>
+
+
+  <footer class="footer">
+    <hr>
+    <div class="download">
+      <b>
+        Download MEBTOON Now!
+      </b>
+      <div class="download-container">
+
+        <img src="../assets/Googleplay-download.png" id="googleplay" alt="google play" srcset="">
+
+        <img src="../assets/Appstore-download.png" id="appstore" alt="appstore">
+
+      </div>
+    </div>
+    <hr>
+    <div class="social-media">
+      <a href="#"> <i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+
+    <ul class="list">
+      <li>
+        <a href="#">About</a>
+      </li>
+
+      <li>
+        <a href="#">Feedback</a>
+      </li>
+      <li>
+
+        <a href="">Terms</a>
+      </li>
+      <li>
+
+        <a href="#">Privacy</a>
+      </li>
+      <li>
+
+        <a href="#">Help</a>
+      </li>
+
+
+    </ul>
+
+    <div class="footer-logo">
+      <img src="../assets/MebToon-Logo 2.png" alt="logo footer">
+    </div>
+
+    <div class="copyright">
+      <p>Copyright © 2022 MebToon Entertainment inc.</p>
+
+    </div>
+
+
+  </footer>
+</body>
+<script src="../js/JQuery.js"></script>
+<script src="../js/universal-script.js"></script>
+</html>
